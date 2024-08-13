@@ -1,71 +1,49 @@
-import React from 'react'
+import React from "react";
 
 const Header = () => {
   return (
     <div>
-        <div className="container-fluid">
+      <div className="container-fluid">
         <div className="row">
-          <div className="col-lg-3 bg-secondary d-none d-lg-block">
+          <div className="col-lg-3  d-none d-lg-block ">
             <a
-              href="index.html"
+              href="/"
               className="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center"
             >
-              <h1 className="m-0 display-4 text-primary text-uppercase">
-                Justice
+              <img
+                src="img/logo.jpg"
+                width={70}
+                height={60}
+                style={{ marginLeft: "15px" }}
+              />
+              <h1 className="m-0 display-5 " style={{ color: "#bf5324" }}>
+                My Family Lawyer
               </h1>
             </a>
           </div>
           <div className="col-lg-9">
-            <div className="row bg-white border-bottom d-none d-lg-flex">
-              <div className="col-lg-7 text-left">
-                <div className="h-100 d-inline-flex align-items-center py-2 px-3">
-                  <i className="fa fa-envelope text-primary mr-2"></i>
-                  <small>info@example.com</small>
+            <div className="row  border-bottom d-none d-lg-flex text-center ">
+              <div className="text-center" style={{ width: "100%" }}>
+                <div className="h-100 d-inline-flex align-items-center py-2 px-3 text-center mx-2">
+                  <i
+                    className="fa fa-envelope  mr-2"
+                    style={{ color: "#bf5324" }}
+                  ></i>
+                  <small>myfamilylawyer01@gmail.com</small>
                 </div>
-                <div className="h-100 d-inline-flex align-items-center py-2 px-2">
-                  <i className="fa fa-phone-alt text-primary mr-2"></i>
-                  <small>+012 345 6789</small>
-                </div>
-              </div>
-              <div className="col-lg-5 text-right">
-                <div className="d-inline-flex align-items-center p-2">
-                  <a
-                    className="btn btn-sm btn-outline-primary btn-sm-square mr-2"
-                    href=""
-                  >
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                  <a
-                    className="btn btn-sm btn-outline-primary btn-sm-square mr-2"
-                    href=""
-                  >
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                  <a
-                    className="btn btn-sm btn-outline-primary btn-sm-square mr-2"
-                    href=""
-                  >
-                    <i className="fab fa-linkedin-in"></i>
-                  </a>
-                  <a
-                    className="btn btn-sm btn-outline-primary btn-sm-square mr-2"
-                    href=""
-                  >
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                  <a
-                    className="btn btn-sm btn-outline-primary btn-sm-square mr-2"
-                    href=""
-                  >
-                    <i className="fab fa-youtube"></i>
-                  </a>
+                <div className="h-100 d-inline-flex align-items-center py-2 px-2 mx-2">
+                  <i
+                    className="fa fa-phone-alt mr-2"
+                    style={{ color: "#bf5324" }}
+                  ></i>
+                  <small>+91-9868333896</small>
                 </div>
               </div>
             </div>
             <nav className="navbar navbar-expand-lg bg-white navbar-light p-0">
               <a href="index.html" className="navbar-brand d-block d-lg-none">
-                <h1 className="m-0 display-4 text-primary text-uppercase">
-                  Justice
+                <h1 className="m-0 display-6 text-primary text-uppercase">
+                  My Family Lawyer
                 </h1>
               </a>
               <button
@@ -77,48 +55,35 @@ const Header = () => {
                 <span className="navbar-toggler-icon"></span>
               </button>
               <div
-                className="collapse navbar-collapse justify-content-between"
+                className="collapse navbar-collapse justify-content-around"
                 id="navbarCollapse"
+                style={{}}
               >
-                <div className="navbar-nav mr-auto py-0">
-                  <a href="index.html" className="nav-item nav-link">
+                <div
+                  className="navbar-nav  py-0"
+                  style={{
+                    width: "80%",
+                    justifyContent: "space-evenly",
+                  }}
+                >
+                  <a href="/" className="nav-item nav-link">
                     Home
                   </a>
-                  <a href="about.html" className="nav-item nav-link active">
+                  {/* //active */}
+                  <a href="/about" className="nav-item nav-link ">
                     About
                   </a>
-                  <a href="service.html" className="nav-item nav-link">
-                    Practice
-                  </a>
-                  <a href="team.html" className="nav-item nav-link">
-                    Attorneys
-                  </a>
-                  <div className="nav-item dropdown">
-                    <a
-                      href="#"
-                      className="nav-link dropdown-toggle"
-                      data-toggle="dropdown"
-                    >
-                      Dropdown
-                    </a>
-                    <div className="dropdown-menu rounded-0 m-0">
-                      <a href="#" className="dropdown-item">
-                        Menu Item 1
-                      </a>
-                      <a href="#" className="dropdown-item">
-                        Menu Item 2
-                      </a>
-                      <a href="#" className="dropdown-item">
-                        Menu Item 3
-                      </a>
-                    </div>
-                  </div>
-                  <a href="contact.html" className="nav-item nav-link">
+
+                  <a href="/contact" className="nav-item nav-link">
                     Contact
                   </a>
                 </div>
-                <a href="" className="btn btn-primary mr-3 d-none d-lg-block">
-                  Get A Quote
+                <a
+                  href="#"
+                  className="btn mr-3 d-none d-lg-block"
+                  style={{ backgroundColor: "#bf5324", color: "white" }}
+                >
+                  Get an Appointment
                 </a>
               </div>
             </nav>
@@ -126,7 +91,7 @@ const Header = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
