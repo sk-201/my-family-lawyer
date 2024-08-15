@@ -2539,15 +2539,16 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: #212529;
-  background-color: #b49c73;
-  border-color: #b49c73;
+  color: #fff;
+
+  background-color: #bf5324;
+  border-color: #bf5324;
 }
 
 .btn-primary:hover {
-  color: #fff;
-  background-color: #a78a5a;
-  border-color: #9f8455;
+  color: #f5d9b5;
+  background-color: #ff5324;
+  border-color: #ff5324;
 }
 
 .btn-primary:focus,
@@ -5764,13 +5765,13 @@ a.badge-dark.focus {
 }
 
 .list-group-item-primary {
-  color: #5e513c;
+  color: #bf5324;
   background-color: #eae3d8;
 }
 
 .list-group-item-primary.list-group-item-action:hover,
 .list-group-item-primary.list-group-item-action:focus {
-  color: #5e513c;
+  color: #bf5324;
   background-color: #e1d7c7;
 }
 
@@ -6762,7 +6763,7 @@ a.bg-primary:hover,
 a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #9f8455 !important;
+  background-color: #bf5324 !important;
 }
 
 .bg-secondary {
@@ -9940,7 +9941,7 @@ button.bg-dark:focus {
 
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #8e764c !important;
+  color: #bf5324 !important;
 }
 
 .text-secondary {
@@ -10200,7 +10201,7 @@ h6 {
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-  color: #b49c73;
+  color: #bf5324;
 }
 
 @media (max-width: 991.98px) {

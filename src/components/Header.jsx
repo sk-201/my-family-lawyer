@@ -42,7 +42,7 @@ const Header = () => {
             </div>
             <nav className="navbar navbar-expand-lg bg-white navbar-light p-0">
               <a href="index.html" className="navbar-brand d-block d-lg-none">
-                <h1 className="m-0 display-6 text-primary text-uppercase">
+                <h1 className="m-0 display-6 " style={{ color: "#bf5324" }}>
                   My Family Lawyer
                 </h1>
               </a>
@@ -78,11 +78,7 @@ const Header = () => {
                     Contact
                   </a>
                 </div>
-                <a
-                  href="#"
-                  className="btn mr-3 d-none d-lg-block"
-                  style={{ backgroundColor: "#bf5324", color: "white" }}
-                >
+                <a href="#" className="btn btn-primary mr-3 d-none d-lg-block">
                   Get an Appointment
                 </a>
               </div>
