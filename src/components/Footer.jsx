@@ -121,7 +121,6 @@ const Footer = () => {
         >
           <div className="text-center  mb-3 mb-md-0 " style={{ width: "100%" }}>
             <p className="m-0 text-white ">
-              &copy;{" "}
               <a className="font-weight-bold text-white" href="#">
                 Copyright © 2024
               </a>

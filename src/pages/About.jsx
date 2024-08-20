@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Appointment from "../components/Appointment";
+import WhatsApp from "../components/WhatsApp";
 const About = () => {
   return (
     <div>
@@ -86,6 +87,7 @@ const About = () => {
       {/* <!-- Appointment End --> */}
 
       {/* <!-- Footer  --> */}
+      <WhatsApp />
       <Footer />
     </div>
   );

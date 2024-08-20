@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Header = () => {
+  const [showMenu, setShowMenu] = useState(false);
+  const toggleBurger = () => {
+    setShowMenu((prev) => !prev);
+  };
   return (
     <div>
       <div className="container-fluid">
@@ -29,20 +33,24 @@ const Header = () => {
                     className="fa fa-envelope  mr-2"
                     style={{ color: "#bf5324" }}
                   ></i>
-                  <small>myfamilylawyer01@gmail.com</small>
+                  <small style={{ color: "#000000", fontWeight: "600" }}>
+                    myfamilylawyer01@gmail.com
+                  </small>
                 </div>
                 <div className="h-100 d-inline-flex align-items-center py-2 px-2 mx-2">
                   <i
                     className="fa fa-phone-alt mr-2"
                     style={{ color: "#bf5324" }}
                   ></i>
-                  <small>+91-9868333896</small>
+                  <small style={{ color: "#000000", fontWeight: "600" }}>
+                    +91-9868333896
+                  </small>
                 </div>
               </div>
             </div>
             <nav className="navbar navbar-expand-lg bg-white navbar-light p-0">
-              <a href="index.html" className="navbar-brand d-block d-lg-none">
-                <h1 className="m-0 display-6 " style={{ color: "#bf5324" }}>
+              <a href="/" className="navbar-brand d-block d-lg-none">
+                <h1 className="m-0 display-9 " style={{ color: "#bf5324" }}>
                   My Family Lawyer
                 </h1>
               </a>
@@ -51,6 +59,7 @@ const Header = () => {
                 className="navbar-toggler"
                 data-toggle="collapse"
                 data-target="#navbarCollapse"
+                onClick={toggleBurger}
               >
                 <span className="navbar-toggler-icon"></span>
               </button>
@@ -82,6 +91,39 @@ const Header = () => {
                   Get an Appointment
                 </a>
               </div>
+              {showMenu == true ? (
+                <div
+                  className="bg-white  py-0"
+                  style={{
+                    width: "80%",
+                    justifyContent: "space-evenly",
+                  }}
+                >
+                  <a
+                    href="/"
+                    className="nav-item nav-link"
+                    style={{ color: "#bf5324" }}
+                  >
+                    Home
+                  </a>
+                  {/* //active */}
+                  <a
+                    href="/about"
+                    className="nav-item nav-link "
+                    style={{ color: "#bf5324" }}
+                  >
+                    About
+                  </a>
+
+                  <a
+                    href="/contact"
+                    className="nav-item nav-link"
+                    style={{ color: "#bf5324" }}
+                  >
+                    Contact
+                  </a>
+                </div>
+              ) : null}
             </nav>
           </div>
         </div>

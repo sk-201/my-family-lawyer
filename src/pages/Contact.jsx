@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import WhatsApp from "../components/WhatsApp";
 
 const Contact = () => {
   return (
@@ -114,7 +115,7 @@ const Contact = () => {
                     objectFit: "cover",
                     border: "0",
                   }}
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.802971609248!2d77.21452157429496!3d28.665617582579625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd0b2e5426ad%3A0x9327b697e6d25f47!2sDistrict%20%26%20Sessions%20Courts%2C%20Tis%20Hazari!5e0!3m2!1sen!2sin!4v1723711721855!5m2!1sen!2sin"
                   frameborder="0"
                   allowfullscreen=""
                   aria-hidden="false"
@@ -125,6 +126,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <WhatsApp />
       {/* <!-- Contact End --> */}
       {/* <!-- Footer */}
       <Footer />
