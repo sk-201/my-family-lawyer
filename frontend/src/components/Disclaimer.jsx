@@ -30,21 +30,20 @@ export const Disclaimer = ({ toggleModal }) => {
             </div>
             <div className="modal-body">
               Disclaimer The Advocates Act, 1961,the rules framed by Bar Council
-              of India and Bar Council of Punjab And Haryana, do not permit
-              advertisement or solicitation by Advocates in any form or manner.
-              This website www.singhlawyers.com and the contents thereof are
-              merely for informational purposes and not in the nature of
-              solicitation or an advertisement. Similarly, any matter /
-              information / content posted by NAVKIRAN SINGH & ASSOCIATES on
-              this website shall not be construed as legal advice and cannot be
-              substituted by the advice of a legal practitioner. NAVKIRAN SINGH
-              & ASSOCIATES takes no liability for consequences of any action
-              taken by you relying on the matter/ information / content posted
-              on this website. By entering this website, you confirm and
-              acknowledge that you have voluntarily sought the information
-              relating to and/or posted by NAVKIRAN SINGH & ASSOCIATES and there
-              has been no solicitation / advertisement / inducement by either
-              NAVKIRAN SINGH & ASSOCIATES and/or its partners and/or its members
+              of India, do not permit advertisement or solicitation by Advocates
+              in any form or manner. This website www.myfamilylawyer.co and the
+              contents thereof are merely for informational purposes and not in
+              the nature of solicitation or an advertisement. Similarly, any
+              matter / information / content posted on this website shall not be
+              construed as legal advice and cannot be substituted by the advice
+              of a legal practitioner. My Family Lawyer takes no liability for
+              consequences of any action taken by you relying on the matter/
+              information / content posted on this website. By entering this
+              website, you confirm and acknowledge that you have voluntarily
+              sought the information relating to and/or posted by My Family
+              Lawyer and there has been no solicitation / advertisement /
+              inducement by either My Family Lawyer and/or its partners and/or
+              its members
             </div>
             <div className="modal-footer">
               <button

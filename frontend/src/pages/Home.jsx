@@ -45,7 +45,10 @@ const Home = () => {
                         Unlock peace of mind with our <br />
                         Family Law Expertise
                       </h3>
-                      <a className="btn btn-primary py-3 px-5 mt-2" href="#">
+                      <a
+                        className="btn btn-primary py-3 px-5 mt-2"
+                        href="/contact"
+                      >
                         Get an appointment
                       </a>
                     </div>
@@ -155,19 +158,34 @@ const Home = () => {
                         <div
                           style={{ backgroundColor: "#bf5324", color: "#fff" }}
                         >
-                          Marriage, Divorce, Dowry, Domestic Violence
+                          Marriage, Divorce
                         </div>
                         <div style={{ color: "#000000" }}>
-                          Maintenance, Child custody, Visitation Rights,
-                          Adoption
+                          Dowry, Domestic Violence
                         </div>
                         <div
                           style={{ backgroundColor: "#bf5324", color: "#fff" }}
                         >
-                          Live-in-relationship, Alimony, Special Marriage Act
+                          Maintenance, Child custody
                         </div>
                         <div style={{ color: "#000000" }}>
-                          Family Settlement, Will, Deed, Mutation
+                          Visitation Rights, Adoption
+                        </div>
+                        <div
+                          style={{ backgroundColor: "#bf5324", color: "#fff" }}
+                        >
+                          Live-in-relationship, Alimony
+                        </div>
+                        <div style={{ color: "#000000" }}>
+                          Special Marriage Act
+                        </div>
+                        <div
+                          style={{ backgroundColor: "#bf5324", color: "#fff" }}
+                        >
+                          Family Settlement
+                        </div>
+                        <div style={{ color: "#000000" }}>
+                          Will, Deed, Mutation
                         </div>
                         <div
                           style={{ backgroundColor: "#bf5324", color: "#fff" }}
@@ -240,13 +258,7 @@ const Home = () => {
             <div className="container py-5">
               <div className="row">
                 <div className="col-lg-3">
-                  <h1 className="mb-4">Meet Our Attorney</h1>
-                  <p>
-                    Invidunt lorem justo clita. Erat lorem labore ea, justo
-                    dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea
-                    justo. Erat justo sed sed diam. Ea et erat ut sed diam sea
-                    ipsum
-                  </p>
+                  <h1 className="mb-4">Meet Our Team</h1>
                 </div>
                 <div className="col-lg-9 pt-5 pt-lg-0">
                   <div
@@ -261,9 +273,9 @@ const Home = () => {
                       <div className="position-relative">
                         <div className="team-img">
                           <img
-                            className="img-fluid w-100"
-                            src="img/team-1.jpg"
-                            alt=""
+                            className=" w-75  object-fit-cover"
+                            src="img/mohd-yusuf.jpeg"
+                            alt="mohd-yusuf"
                           />
                         </div>
                       </div>
@@ -271,8 +283,44 @@ const Home = () => {
                         className="d-flex flex-column  text-center py-4"
                         style={{ backgroundColor: "#bf5324" }}
                       >
-                        <h5 style={{ color: "#f5d9b5" }}>Lawyer Name</h5>
-                        <p className="m-0 text-white">Family Lawyer</p>
+                        <h5 style={{ color: "#f5d9b5" }}>Mohd Yusuf</h5>
+                        <p className="m-0 text-white">Advocate</p>
+                      </div>
+                    </div>
+                    <div className="team d-flex flex-column text-center rounded overflow-hidden">
+                      <div className="position-relative">
+                        <div className="team-img">
+                          <img
+                            className="w-75"
+                            src="img/mohd-shakeel.jpeg"
+                            alt="mohd-shakeel"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        className="d-flex flex-column  text-center py-4"
+                        style={{ backgroundColor: "#bf5324" }}
+                      >
+                        <h5 style={{ color: "#f5d9b5" }}>Mohd Shakeel</h5>
+                        <p className="m-0 text-white">Legal Consultant</p>
+                      </div>
+                    </div>
+                    <div className="team d-flex flex-column text-center rounded overflow-hidden">
+                      <div className="position-relative">
+                        <div className="team-img">
+                          <img
+                            className="w-75"
+                            src="img/nitin-bhaskar.jpeg"
+                            alt="nitin-bhaskar"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        className="d-flex flex-column  text-center py-4"
+                        style={{ backgroundColor: "#bf5324" }}
+                      >
+                        <h5 style={{ color: "#f5d9b5" }}>Nitin Bhaskar</h5>
+                        <p className="m-0 text-white">Advocate</p>
                       </div>
                     </div>
                   </div>

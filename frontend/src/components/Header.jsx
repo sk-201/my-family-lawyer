@@ -87,7 +87,10 @@ const Header = () => {
                     Contact
                   </a>
                 </div>
-                <a href="#" className="btn btn-primary mr-3 d-none d-lg-block">
+                <a
+                  href="/contact"
+                  className="btn btn-primary mr-3 d-none d-lg-block"
+                >
                   Get an Appointment
                 </a>
               </div>

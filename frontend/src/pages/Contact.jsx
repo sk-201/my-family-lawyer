@@ -1,9 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import WhatsApp from "../components/WhatsApp";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  const baseUrl = "http://localhost:8000";
+
+  const sendEmail = async () => {
+    let dataSend = {
+      name: name,
+      email: email,
+      subject: subject,
+      message: message,
+    };
+
+    const res = await fetch(`${baseUrl}/email/sendEmail`, {
+      method: "POST",
+      body: JSON.stringify(dataSend),
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+    })
+      // HANDLING ERRORS
+      .then((res) => {
+        console.log(res);
+        if (res.status > 199 && res.status < 300) {
+          alert("Send Successfully !");
+        }
+      });
+  };
   return (
     <div>
       {/* <!-- Header  --> */}
@@ -56,6 +87,8 @@ const Contact = () => {
                         id="name"
                         placeholder="Your Name"
                         required="required"
+                        onChange={(e) => setName(e.target.value)}
+                        value={name}
                         data-validation-required-message="Please enter your name"
                       />
                       <p className="help-block text-danger"></p>
@@ -67,6 +100,8 @@ const Contact = () => {
                         id="email"
                         placeholder="Your Email"
                         required="required"
+                        onChange={(e) => setEmail(e.target.value)}
+                        value={email}
                         data-validation-required-message="Please enter your email"
                       />
                       <p className="help-block text-danger"></p>
@@ -79,6 +114,8 @@ const Contact = () => {
                       id="subject"
                       placeholder="Subject"
                       required="required"
+                      onChange={(e) => setSubject(e.target.value)}
+                      value={subject}
                       data-validation-required-message="Please enter a subject"
                     />
                     <p className="help-block text-danger"></p>
@@ -90,6 +127,8 @@ const Contact = () => {
                       id="message"
                       placeholder="Message"
                       required="required"
+                      onChange={(e) => setMessage(e.target.value)}
+                      value={message}
                       data-validation-required-message="Please enter your message"
                     ></textarea>
                     <p className="help-block text-danger"></p>
@@ -99,6 +138,7 @@ const Contact = () => {
                       className="btn btn-primary btn-block"
                       type="submit"
                       id="sendMessageButton"
+                      onClick={sendEmail}
                     >
                       Send Message
                     </button>
