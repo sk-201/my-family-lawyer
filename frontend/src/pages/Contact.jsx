@@ -16,25 +16,21 @@ const Contact = () => {
       subject: subject,
       message: message,
     };
-
-    const res = await fetch(
-      `${process.env.REACT_APP_BASE_URL}/email/sendEmail`,
-      {
-        method: "POST",
-        body: JSON.stringify(dataSend),
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-      }
-    )
-      // HANDLING ERRORS
-      .then((res) => {
-        console.log(res);
-        if (res.status > 199 && res.status < 300) {
-          console.log("Sent");
+    try {
+      const res = await fetch(
+        `${process.env.REACT_APP_BASE_URL}/email/sendEmail`,
+        {
+          method: "POST",
+          body: JSON.stringify(dataSend),
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
         }
-      });
+      );
+    } catch (error) {
+      console.log("error", error);
+    }
   };
   return (
     <div>
