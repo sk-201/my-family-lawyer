@@ -5,33 +5,34 @@ import WhatsApp from "../components/WhatsApp";
 
 const Contact = () => {
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+  const [phoneNo, setPhoneno] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-
-  const baseUrl = "http://localhost:8000";
 
   const sendEmail = async () => {
     let dataSend = {
       name: name,
-      email: email,
+      phoneNo: phoneNo,
       subject: subject,
       message: message,
     };
 
-    const res = await fetch(`${baseUrl}/email/sendEmail`, {
-      method: "POST",
-      body: JSON.stringify(dataSend),
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-    })
+    const res = await fetch(
+      `${process.env.REACT_APP_BASE_URL}/email/sendEmail`,
+      {
+        method: "POST",
+        body: JSON.stringify(dataSend),
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+      }
+    )
       // HANDLING ERRORS
       .then((res) => {
         console.log(res);
         if (res.status > 199 && res.status < 300) {
-          alert("Send Successfully !");
+          console.log("Sent");
         }
       });
   };
@@ -95,14 +96,14 @@ const Contact = () => {
                     </div>
                     <div className="col-sm-6 control-group">
                       <input
-                        type="email"
+                        type="number"
                         className="form-control p-4"
-                        id="email"
-                        placeholder="Your Email"
+                        id="phone"
+                        placeholder="Your Phone"
                         required="required"
-                        onChange={(e) => setEmail(e.target.value)}
-                        value={email}
-                        data-validation-required-message="Please enter your email"
+                        onChange={(e) => setPhoneno(e.target.value)}
+                        value={phoneNo}
+                        data-validation-required-message="Please enter your Phone no"
                       />
                       <p className="help-block text-danger"></p>
                     </div>
