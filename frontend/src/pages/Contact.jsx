@@ -9,13 +9,15 @@ const Contact = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  const sendEmail = async () => {
+  const sendEmail = async (event) => {
+    event.preventDefault();
     let dataSend = {
       name: name,
       phoneNo: phoneNo,
       subject: subject,
       message: message,
     };
+
     try {
       const res = await fetch(
         `${process.env.REACT_APP_BASE_URL}/email/sendEmail`,
@@ -28,6 +30,10 @@ const Contact = () => {
           },
         }
       );
+      setName("");
+      setMessage("");
+      setSubject("");
+      setPhoneno("");
     } catch (error) {
       console.log("error", error);
     }
