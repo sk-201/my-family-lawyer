@@ -1,6 +1,6 @@
 const express = require("express");
 const dotenv = require("dotenv");
-const emailRoutes = require("./routes/emailRoutes");
+const emailRoutes = require("../routes/emailRoutes");
 
 const app = express();
 dotenv.config();
