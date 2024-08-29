@@ -19,7 +19,7 @@ const About = () => {
             className="d-flex flex-column align-items-center justify-content-center"
             style={{ minHeight: "400px" }}
           >
-            <h3 className="display-3 text-white text-uppercase">About</h3>
+            <h3 className="display-3 text-white text-uppercase">About Us</h3>
             <div className="d-inline-flex text-white">
               <p className="m-0 text-uppercase">
                 <a className="text-white" href="">
@@ -44,13 +44,13 @@ const About = () => {
                 We Provide Reliable And Effective Family Law Services
               </h1>
               <p
-                className=" p-5 rounded   "
+                className=" p-5 rounded custom-font-size  "
                 style={{
-                  color: "#bf5324",
+                  color: "#ffffff",
                   fontWeight: 700,
-                  fontSize: "18px",
-                  border: "1px solid #bf5324",
-                  backgroundColor: "#f0e8dd",
+
+                  border: "1px solid #919191",
+                  backgroundColor: "#524f4f",
                   boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px;",
                 }}
               >

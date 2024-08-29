@@ -10,16 +10,23 @@ export const Disclaimer = ({ toggleModal }) => {
   }, []);
   return (
     <div className="modal-dialog modal-dialog-scrollable">
-      <div className="modal-dialog">
+      <div
+        className="modal-dialog"
+        style={{
+          width: "100%",
+
+          textAlign: "center",
+        }}
+      >
         {showSpinner === true ? (
           <div
-            className="spinner-border my-auto"
+            className="spinner-border my-auto "
             role="status"
             style={{
-              color: "#bf5324",
+              color: "#919191",
             }}
           >
-            <span class="sr-only">Loading...</span>
+            <span className="sr-only">Loading...</span>
           </div>
         ) : (
           <div className="modal-content">
@@ -28,13 +35,16 @@ export const Disclaimer = ({ toggleModal }) => {
                 Disclaimer
               </h5>
             </div>
-            <div className="modal-body">
+            <div
+              className="modal-body"
+              style={{ textAlign: "justify", textJustify: "inter-word" }}
+            >
               Disclaimer The Advocates Act, 1961,the rules framed by Bar Council
               of India, do not permit advertisement or solicitation by Advocates
-              in any form or manner. This website www.myfamilylawyer.co and the
-              contents thereof are merely for informational purposes and not in
-              the nature of solicitation or an advertisement. Similarly, any
-              matter / information / content posted on this website shall not be
+              in any form or manner. This website and the contents thereof are
+              merely for informational purposes and not in the nature of
+              solicitation or an advertisement. Similarly, any matter /
+              information / content posted on this website shall not be
               construed as legal advice and cannot be substituted by the advice
               of a legal practitioner. My Family Lawyer takes no liability for
               consequences of any action taken by you relying on the matter/
@@ -51,7 +61,7 @@ export const Disclaimer = ({ toggleModal }) => {
                 className="btn btn-primary"
                 onClick={toggleModal}
               >
-                Close
+                Accept
               </button>
             </div>
           </div>

@@ -5,7 +5,7 @@ const Footer = () => {
     <div>
       <div
         className="container-fluid  text-white pt-5 px-sm-3 px-md-5"
-        style={{ marginTop: "90px", backgroundColor: "#bf5324" }}
+        style={{ marginTop: "90px", backgroundColor: "#919191" }}
       >
         <div className="row mt-5">
           <div className="col-lg-4">
@@ -15,7 +15,7 @@ const Footer = () => {
             >
               <i
                 className="fa fa-2x fa-map-marker-alt "
-                style={{ color: "#f5d9b5" }}
+                style={{ color: "#ffffff" }}
               ></i>
               <div className="ml-3">
                 <h5 className="text-white">Our Office</h5>
@@ -32,7 +32,7 @@ const Footer = () => {
             >
               <i
                 className="fa fa-2x fa-envelope-open "
-                style={{ color: "#f5d9b5" }}
+                style={{ color: "#ffffff" }}
               ></i>
               <div className="ml-3">
                 <h5 className="text-white">Email Us</h5>
@@ -47,7 +47,7 @@ const Footer = () => {
             >
               <i
                 className="fa fa-2x fa-phone-alt "
-                style={{ color: "#f5d9b5" }}
+                style={{ color: "#ffffff" }}
               ></i>
               <div className="ml-3">
                 <h5 className="text-white">Call Us</h5>
@@ -60,15 +60,15 @@ const Footer = () => {
           <div className="col-lg-4 col-md-6 mb-5">
             <h1
               className="m-0 mt-n2 display-4  text-uppercase text-center"
-              style={{ color: "#f5d9b5" }}
+              style={{ color: "#ffffff" }}
             >
-              Family Law
+              My Family Lawyer
             </h1>
           </div>
           <div className="col-lg-4 col-md-6 mb-5">
             <h4
               className="font-weight-semi-bold  mb-4 text-center"
-              style={{ color: "#f5d9b5" }}
+              style={{ color: "#ffffff" }}
             >
               Popular Links
             </h4>

@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Appointment from "../components/Appointment";
+
 import { Disclaimer } from "../components/Disclaimer";
 import WhatsApp from "../components/WhatsApp";
+import Services from "../components/Services";
 
 const Home = () => {
   const [showModal, setShowModal] = useState(true);
@@ -29,10 +30,12 @@ const Home = () => {
               className="carousel slide carousel-fade"
               data-ride="carousel"
             >
-              <div className="carousel-inner">
+              <div className="carousel-inner fix-pad">
                 <div
-                  className="carousel-item position-relative active"
-                  style={{ height: "100vh", minHeight: "400px" }}
+                  className="carousel-item position-relative active fix-h"
+                  style={{
+                    height: "100vh",
+                  }}
                 >
                   <img
                     className="position-absolute w-100 h-100"
@@ -61,7 +64,7 @@ const Home = () => {
                   <img
                     className="position-absolute w-100 h-100"
                     src="img/carousel-2.jpg"
-                    style={{ objectFit: "cover" }}
+                    style={{ objectFit: "cover", objectPosition: "center" }}
                   />
                   <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div className="p-3" style={{ maxWidth: "900px" }}>
@@ -96,14 +99,17 @@ const Home = () => {
                     alt=""
                   />
                 </div>
-                <div className="col-lg-7 mt-4 mt-lg-0">
+                <div
+                  className="col-lg-7 mt-4 mt-lg-0"
+                  style={{ textAlign: "justify", textJustify: "inter-word" }}
+                >
                   <h1 className="mb-4">
                     We Provide Reliable And Effective Family Law Services
                   </h1>
                   <p
                     className=" p-3 rounded   "
                     style={{
-                      color: "#bf5324",
+                      color: "#919191",
                       fontWeight: 700,
                       fontSize: "18px",
                       boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px;",
@@ -128,11 +134,9 @@ const Home = () => {
                 <div className="col-lg-12 pt-5 pt-lg-0">
                   <div
                     className=" rounded"
-                    style={{ height: "200px", backgroundColor: "#bf5324" }}
+                    style={{ height: "200px", backgroundColor: "#919191" }}
                   >
-                    <h1 className="text-white text-center pt-4">
-                      Our Services
-                    </h1>
+                    <h1 className="text-white text-center pt-4">Expertise</h1>
                   </div>
                   <div
                     className="owl-carousel service-carousel position-relative"
@@ -141,58 +145,14 @@ const Home = () => {
                     <div className="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
                       <div
                         className="icon-box  text-primary mt-2 mb-4"
-                        style={{ backgroundColor: "#bf5324" }}
+                        style={{ backgroundColor: "#919191" }}
                       >
                         <i
                           className="fa fa-2x fa-users"
                           style={{ color: "#fff" }}
                         ></i>
                       </div>
-
-                      <div
-                        style={{
-                          fontWeight: 700,
-                          fontSize: "20px",
-                        }}
-                      >
-                        <div
-                          style={{ backgroundColor: "#bf5324", color: "#fff" }}
-                        >
-                          Marriage, Divorce
-                        </div>
-                        <div style={{ color: "#000000" }}>
-                          Dowry, Domestic Violence
-                        </div>
-                        <div
-                          style={{ backgroundColor: "#bf5324", color: "#fff" }}
-                        >
-                          Maintenance, Child custody
-                        </div>
-                        <div style={{ color: "#000000" }}>
-                          Visitation Rights, Adoption
-                        </div>
-                        <div
-                          style={{ backgroundColor: "#bf5324", color: "#fff" }}
-                        >
-                          Live-in-relationship, Alimony
-                        </div>
-                        <div style={{ color: "#000000" }}>
-                          Special Marriage Act
-                        </div>
-                        <div
-                          style={{ backgroundColor: "#bf5324", color: "#fff" }}
-                        >
-                          Family Settlement
-                        </div>
-                        <div style={{ color: "#000000" }}>
-                          Will, Deed, Mutation
-                        </div>
-                        <div
-                          style={{ backgroundColor: "#bf5324", color: "#fff" }}
-                        >
-                          Property Disputes.
-                        </div>
-                      </div>
+                      <Services />
                     </div>
                   </div>
                 </div>
@@ -206,7 +166,7 @@ const Home = () => {
                 <div className="col-lg-12 pt-5 pt-lg-0">
                   <div
                     className=" rounded"
-                    style={{ height: "200px", backgroundColor: "#bf5324" }}
+                    style={{ height: "200px", backgroundColor: "#919191" }}
                   >
                     <h1 className="text-white text-center pt-4">
                       Why Choose us?
@@ -219,7 +179,7 @@ const Home = () => {
                     <div className="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
                       <div
                         className="icon-box  text-primary mt-2 mb-4"
-                        style={{ backgroundColor: "#bf5324" }}
+                        style={{ backgroundColor: "#919191" }}
                       >
                         <i
                           className="fa fa-2x fa-users"
@@ -228,10 +188,12 @@ const Home = () => {
                       </div>
 
                       <ul
+                        className="custom-font-size"
                         style={{
                           color: "#000000",
                           fontWeight: 700,
-                          fontSize: "20px",
+
+                          textAlign: "left",
                         }}
                       >
                         <li>Easiness of online/offline consultation</li>
@@ -249,10 +211,6 @@ const Home = () => {
           </div>
           {/* Services End */}
 
-          {/* Appointment Start */}
-          <Appointment />
-          {/* Appointment End */}
-
           {/* Team Start */}
           <div className="container-fluid py-5">
             <div className="container py-5">
@@ -263,7 +221,7 @@ const Home = () => {
                 <div className="col-lg-9 pt-5 pt-lg-0">
                   <div
                     className="rounded"
-                    style={{ height: "200px", backgroundColor: "#bf5324" }}
+                    style={{ height: "200px", backgroundColor: "#919191" }}
                   ></div>
                   <div
                     className="owl-carousel team-carousel position-relative"
@@ -281,9 +239,9 @@ const Home = () => {
                       </div>
                       <div
                         className="d-flex flex-column  text-center py-4"
-                        style={{ backgroundColor: "#bf5324" }}
+                        style={{ backgroundColor: "#919191" }}
                       >
-                        <h5 style={{ color: "#f5d9b5" }}>Mohd Yusuf</h5>
+                        <h5 style={{ color: "#ffffff" }}>Mohd Yusuf</h5>
                         <p className="m-0 text-white">Advocate</p>
                       </div>
                     </div>
@@ -299,9 +257,9 @@ const Home = () => {
                       </div>
                       <div
                         className="d-flex flex-column  text-center py-4"
-                        style={{ backgroundColor: "#bf5324" }}
+                        style={{ backgroundColor: "#919191" }}
                       >
-                        <h5 style={{ color: "#f5d9b5" }}>Mohd Shakeel</h5>
+                        <h5 style={{ color: "#ffffff" }}>Mohd Shakeel</h5>
                         <p className="m-0 text-white">Legal Consultant</p>
                       </div>
                     </div>
@@ -317,9 +275,9 @@ const Home = () => {
                       </div>
                       <div
                         className="d-flex flex-column  text-center py-4"
-                        style={{ backgroundColor: "#bf5324" }}
+                        style={{ backgroundColor: "#919191" }}
                       >
-                        <h5 style={{ color: "#f5d9b5" }}>Nitin Bhaskar</h5>
+                        <h5 style={{ color: "#ffffff" }}>Nitin Bhaskar</h5>
                         <p className="m-0 text-white">Advocate</p>
                       </div>
                     </div>
