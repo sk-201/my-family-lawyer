@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import WhatsApp from "../components/WhatsApp";
-const About = () => {
+const Marriage = () => {
   return (
     <div>
       {/* <!-- Header Start --> */}
@@ -18,7 +18,7 @@ const About = () => {
             className="d-flex flex-column align-items-center justify-content-center"
             style={{ minHeight: "400px" }}
           >
-            <h3 className="display-3 text-white text-uppercase">About Us</h3>
+            <h3 className="display-3 text-white text-uppercase">Marriage</h3>
             <div className="d-inline-flex text-white">
               <p className="m-0 text-uppercase">
                 <a className="text-white" href="/">
@@ -26,14 +26,14 @@ const About = () => {
                 </a>
               </p>
               <i className="fa fa-angle-double-right pt-1 px-3"></i>
-              <p className="m-0 text-uppercase">About</p>
+              <p className="m-0 text-uppercase">Marriage</p>
             </div>
           </div>
         </div>
       </div>
       {/* <!-- Page Header End --> */}
 
-      {/* <!-- About Start --> */}
+      {/* <!-- Marriage Start --> */}
 
       <div className="container-fluid py-5 text-center">
         <div className="container py-5">
@@ -61,24 +61,20 @@ const About = () => {
                     alt="Avatar"
                   />
                 </div>
-                At My Family Lawyer, we are dedicated to providing peace of mind
-                through our extensive expertise in family law. Our commitment is
-                to assist individuals and families in navigating the
-                complexities of legal challenges, whether through court trials,
-                mediation, or amicable settlements. With a deep understanding of
-                family laws and their implications, we are here to offer
-                comprehensive legal support tailored to your unique situation.
-                Our approach is client-focused, ensuring that we not only
-                address the legal aspects of your case but also provide
-                compassionate support throughout the process. We believe in
-                transparent communication and personalized solutions that
-                prioritize your rights and well-being.
+                Marriage is a significant milestone, symbolizing love,
+                commitment, and partnership. While it's a joyous occasion, it's
+                also essential to consider the legal implications. Marriage is a
+                legal union that carries significant rights and
+                responsibilities. My family lawyer guides you through
+                Pre-nuptial agreements Marital contracts Domestic partnerships
+                My Family lawyer understand the importance of this milestone and
+                are dedicated to ensuring your legal interests are protected.
               </p>
             </div>
           </div>
         </div>
       </div>
-      {/* <!-- About End --> */}
+      {/* <!-- Marriage End --> */}
 
       {/* <!-- Footer  --> */}
       <WhatsApp />
@@ -87,4 +83,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Marriage;

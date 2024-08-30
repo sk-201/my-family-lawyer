@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import WhatsApp from "../components/WhatsApp";
-const About = () => {
+const Divorce = () => {
   return (
     <div>
       {/* <!-- Header Start --> */}
@@ -18,7 +18,7 @@ const About = () => {
             className="d-flex flex-column align-items-center justify-content-center"
             style={{ minHeight: "400px" }}
           >
-            <h3 className="display-3 text-white text-uppercase">About Us</h3>
+            <h3 className="display-3 text-white text-uppercase">Divorce</h3>
             <div className="d-inline-flex text-white">
               <p className="m-0 text-uppercase">
                 <a className="text-white" href="/">
@@ -26,14 +26,14 @@ const About = () => {
                 </a>
               </p>
               <i className="fa fa-angle-double-right pt-1 px-3"></i>
-              <p className="m-0 text-uppercase">About</p>
+              <p className="m-0 text-uppercase">Divorce</p>
             </div>
           </div>
         </div>
       </div>
       {/* <!-- Page Header End --> */}
 
-      {/* <!-- About Start --> */}
+      {/* <!-- Divorce Start --> */}
 
       <div className="container-fluid py-5 text-center">
         <div className="container py-5">
@@ -61,24 +61,23 @@ const About = () => {
                     alt="Avatar"
                   />
                 </div>
-                At My Family Lawyer, we are dedicated to providing peace of mind
-                through our extensive expertise in family law. Our commitment is
-                to assist individuals and families in navigating the
-                complexities of legal challenges, whether through court trials,
-                mediation, or amicable settlements. With a deep understanding of
-                family laws and their implications, we are here to offer
-                comprehensive legal support tailored to your unique situation.
-                Our approach is client-focused, ensuring that we not only
-                address the legal aspects of your case but also provide
-                compassionate support throughout the process. We believe in
-                transparent communication and personalized solutions that
-                prioritize your rights and well-being.
+                Divorce marks a significant life change. My family lawyer
+                provides compassionate and expert guidance through this
+                challenging process. We understand the complexities involved and
+                are committed to protecting your rights and interests. Divorce –
+                is a legal dissolution of a marriage. It’s a complex process
+                that often involves emotional turmoil and significant life
+                changes. If you are facing this challenging situation, seeking
+                legal counsel from an experienced divorce lawyer is crucial. My
+                family lawyer can guide you through the legal complexities,
+                protect your rights, and help you navigate the divorce process
+                with clarity and confidence.
               </p>
             </div>
           </div>
         </div>
       </div>
-      {/* <!-- About End --> */}
+      {/* <!-- Divorce End --> */}
 
       {/* <!-- Footer  --> */}
       <WhatsApp />
@@ -87,4 +86,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Divorce;

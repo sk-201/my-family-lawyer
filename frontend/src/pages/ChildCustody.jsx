@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import WhatsApp from "../components/WhatsApp";
-const About = () => {
+const ChildCustody = () => {
   return (
     <div>
       {/* <!-- Header Start --> */}
@@ -18,7 +18,9 @@ const About = () => {
             className="d-flex flex-column align-items-center justify-content-center"
             style={{ minHeight: "400px" }}
           >
-            <h3 className="display-3 text-white text-uppercase">About Us</h3>
+            <h3 className="display-3 text-white text-uppercase">
+              Child Custody
+            </h3>
             <div className="d-inline-flex text-white">
               <p className="m-0 text-uppercase">
                 <a className="text-white" href="/">
@@ -26,14 +28,14 @@ const About = () => {
                 </a>
               </p>
               <i className="fa fa-angle-double-right pt-1 px-3"></i>
-              <p className="m-0 text-uppercase">About</p>
+              <p className="m-0 text-uppercase">Child Custody</p>
             </div>
           </div>
         </div>
       </div>
       {/* <!-- Page Header End --> */}
 
-      {/* <!-- About Start --> */}
+      {/* <!-- ChildCustody Start --> */}
 
       <div className="container-fluid py-5 text-center">
         <div className="container py-5">
@@ -55,7 +57,7 @@ const About = () => {
               >
                 <div>
                   <img
-                    src="img/logo.jpg"
+                    src="img/about.jpg"
                     className="rounded-circle mb-2"
                     style={{ width: "120px" }}
                     alt="Avatar"
@@ -78,7 +80,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      {/* <!-- About End --> */}
+      {/* <!-- ChildCustody End --> */}
 
       {/* <!-- Footer  --> */}
       <WhatsApp />
@@ -87,4 +89,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default ChildCustody;

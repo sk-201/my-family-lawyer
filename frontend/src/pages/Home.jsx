@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-
 import { Disclaimer } from "../components/Disclaimer";
 import WhatsApp from "../components/WhatsApp";
 import Services from "../components/Services";
+import WhyChoose from "../components/WhyChoose";
+import Team from "../components/Team";
 
+import OtherServices from "../components/OtherServices";
 const Home = () => {
   const [showModal, setShowModal] = useState(true);
 
@@ -103,7 +105,7 @@ const Home = () => {
                   className="col-lg-7 mt-4 mt-lg-0"
                   style={{ textAlign: "justify", textJustify: "inter-word" }}
                 >
-                  <h1 className="mb-4">
+                  <h1 className="mb-4" style={{ color: "#524f4f" }}>
                     We Provide Reliable And Effective Family Law Services
                   </h1>
                   <p
@@ -143,15 +145,6 @@ const Home = () => {
                     style={{ marginTop: "-100px", padding: "0 30px" }}
                   >
                     <div className="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
-                      <div
-                        className="icon-box  text-primary mt-2 mb-4"
-                        style={{ backgroundColor: "#919191" }}
-                      >
-                        <i
-                          className="fa fa-2x fa-users"
-                          style={{ color: "#fff" }}
-                        ></i>
-                      </div>
                       <Services />
                     </div>
                   </div>
@@ -159,6 +152,11 @@ const Home = () => {
               </div>
             </div>
           </div>
+          <h1 className=" text-center pt-4" style={{ color: "#524f4f" }}>
+            Other Services
+          </h1>
+          <OtherServices />
+
           {/* Services Start */}
           <div className="container-fluid py-5">
             <div className="container py-5">
@@ -172,39 +170,7 @@ const Home = () => {
                       Why Choose us?
                     </h1>
                   </div>
-                  <div
-                    className="owl-carousel service-carousel position-relative"
-                    style={{ marginTop: "-100px", padding: "0 30px" }}
-                  >
-                    <div className="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
-                      <div
-                        className="icon-box  text-primary mt-2 mb-4"
-                        style={{ backgroundColor: "#919191" }}
-                      >
-                        <i
-                          className="fa fa-2x fa-users"
-                          style={{ color: "#fff" }}
-                        ></i>
-                      </div>
-
-                      <ul
-                        className="custom-font-size"
-                        style={{
-                          color: "#000000",
-                          fontWeight: 700,
-
-                          textAlign: "left",
-                        }}
-                      >
-                        <li>Easiness of online/offline consultation</li>
-                        <li>Experienced family lawyer</li>
-                        <li>Personalized solutions</li>
-                        <li>Compassionate support</li>
-                        <li>Transparency between us and you</li>
-                        <li>Stand a step ahead to protect your rights</li>
-                      </ul>
-                    </div>
-                  </div>
+                  <WhyChoose />
                 </div>
               </div>
             </div>
@@ -218,71 +184,7 @@ const Home = () => {
                 <div className="col-lg-3">
                   <h1 className="mb-4">Meet Our Team</h1>
                 </div>
-                <div className="col-lg-9 pt-5 pt-lg-0">
-                  <div
-                    className="rounded"
-                    style={{ height: "200px", backgroundColor: "#919191" }}
-                  ></div>
-                  <div
-                    className="owl-carousel team-carousel position-relative"
-                    style={{ marginTop: "-100px", padding: "0 30px" }}
-                  >
-                    <div className="team d-flex flex-column text-center rounded overflow-hidden">
-                      <div className="position-relative">
-                        <div className="team-img">
-                          <img
-                            className=" w-75  object-fit-cover"
-                            src="img/mohd-yusuf.jpeg"
-                            alt="mohd-yusuf"
-                          />
-                        </div>
-                      </div>
-                      <div
-                        className="d-flex flex-column  text-center py-4"
-                        style={{ backgroundColor: "#919191" }}
-                      >
-                        <h5 style={{ color: "#ffffff" }}>Mohd Yusuf</h5>
-                        <p className="m-0 text-white">Advocate</p>
-                      </div>
-                    </div>
-                    <div className="team d-flex flex-column text-center rounded overflow-hidden">
-                      <div className="position-relative">
-                        <div className="team-img">
-                          <img
-                            className="w-75"
-                            src="img/mohd-shakeel.jpeg"
-                            alt="mohd-shakeel"
-                          />
-                        </div>
-                      </div>
-                      <div
-                        className="d-flex flex-column  text-center py-4"
-                        style={{ backgroundColor: "#919191" }}
-                      >
-                        <h5 style={{ color: "#ffffff" }}>Mohd Shakeel</h5>
-                        <p className="m-0 text-white">Legal Consultant</p>
-                      </div>
-                    </div>
-                    <div className="team d-flex flex-column text-center rounded overflow-hidden">
-                      <div className="position-relative">
-                        <div className="team-img">
-                          <img
-                            className="w-75"
-                            src="img/nitin-bhaskar.jpeg"
-                            alt="nitin-bhaskar"
-                          />
-                        </div>
-                      </div>
-                      <div
-                        className="d-flex flex-column  text-center py-4"
-                        style={{ backgroundColor: "#919191" }}
-                      >
-                        <h5 style={{ color: "#ffffff" }}>Nitin Bhaskar</h5>
-                        <p className="m-0 text-white">Advocate</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <Team />
               </div>
             </div>
           </div>
