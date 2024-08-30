@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import WhatsApp from "../components/WhatsApp";
-const About = () => {
+const Maintenance = () => {
   return (
     <div>
       {/* <!-- Header Start --> */}
@@ -18,7 +18,9 @@ const About = () => {
             className="d-flex flex-column align-items-center justify-content-center"
             style={{ minHeight: "400px" }}
           >
-            <h3 className="display-3 text-white text-uppercase">About Us</h3>
+            <h3 className="display-3 text-white text-uppercase">
+              Maintenance{" "}
+            </h3>
             <div className="d-inline-flex text-white">
               <p className="m-0 text-uppercase">
                 <a className="text-white" href="/">
@@ -26,14 +28,14 @@ const About = () => {
                 </a>
               </p>
               <i className="fa fa-angle-double-right pt-1 px-3"></i>
-              <p className="m-0 text-uppercase">About</p>
+              <p className="m-0 text-uppercase">Maintenance</p>
             </div>
           </div>
         </div>
       </div>
       {/* <!-- Page Header End --> */}
 
-      {/* <!-- About Start --> */}
+      {/* <!-- Maintenance Start --> */}
 
       <div className="container-fluid py-5 text-center">
         <div className="container py-5">
@@ -61,24 +63,28 @@ const About = () => {
                     alt="Avatar"
                   />
                 </div>
-                At My Family Lawyer, we are dedicated to providing peace of mind
-                through our extensive expertise in family law. Our commitment is
-                to assist individuals and families in navigating the
-                complexities of legal challenges, whether through court trials,
-                mediation, or amicable settlements. With a deep understanding of
-                family laws and their implications, we are here to offer
-                comprehensive legal support tailored to your unique situation.
-                Our approach is client-focused, ensuring that we not only
-                address the legal aspects of your case but also provide
-                compassionate support throughout the process. We believe in
-                transparent communication and personalized solutions that
-                prioritize your rights and well-being.
+                Maintenance is a legal provision designed to provide financial
+                assistance/support to those in need. Spouses, children, and even
+                parents can seek maintenance under certain circumstances.
+                Understanding your maintenance rights is crucial. My family
+                lawyer can help you understand your rights and obligations
+                regarding maintenance. Whether you're seeking maintenance or
+                defending against a claim, we can provide expert guidance
+                through this complex process. • Spousal Maintenance: Aims to
+                ensure financial stability for a spouse after separation or
+                divorce. • Child Maintenance: Guarantees financial support for
+                children, essential for their upbringing and well-being. •
+                Parental Maintenance: In specific cases, parents may be entitled
+                to maintenance from their adult children, often under conditions
+                of dependency or incapacity. Understanding your maintenance
+                rights is crucial. Our legal experts can guide you through the
+                process.
               </p>
             </div>
           </div>
         </div>
       </div>
-      {/* <!-- About End --> */}
+      {/* <!-- Maintenance End --> */}
 
       {/* <!-- Footer  --> */}
       <WhatsApp />
@@ -87,4 +93,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Maintenance;

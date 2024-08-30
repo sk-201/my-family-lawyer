@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import WhatsApp from "../components/WhatsApp";
-const About = () => {
+const Domestic = () => {
   return (
     <div>
       {/* <!-- Header Start --> */}
@@ -18,7 +18,9 @@ const About = () => {
             className="d-flex flex-column align-items-center justify-content-center"
             style={{ minHeight: "400px" }}
           >
-            <h3 className="display-3 text-white text-uppercase">About Us</h3>
+            <h3 className="display-3 text-white text-uppercase">
+              Domestic Violence
+            </h3>
             <div className="d-inline-flex text-white">
               <p className="m-0 text-uppercase">
                 <a className="text-white" href="/">
@@ -26,14 +28,14 @@ const About = () => {
                 </a>
               </p>
               <i className="fa fa-angle-double-right pt-1 px-3"></i>
-              <p className="m-0 text-uppercase">About</p>
+              <p className="m-0 text-uppercase">Domestic Violence</p>
             </div>
           </div>
         </div>
       </div>
       {/* <!-- Page Header End --> */}
 
-      {/* <!-- About Start --> */}
+      {/* <!-- Domestic Start --> */}
 
       <div className="container-fluid py-5 text-center">
         <div className="container py-5">
@@ -61,24 +63,27 @@ const About = () => {
                     alt="Avatar"
                   />
                 </div>
-                At My Family Lawyer, we are dedicated to providing peace of mind
-                through our extensive expertise in family law. Our commitment is
-                to assist individuals and families in navigating the
-                complexities of legal challenges, whether through court trials,
-                mediation, or amicable settlements. With a deep understanding of
-                family laws and their implications, we are here to offer
-                comprehensive legal support tailored to your unique situation.
-                Our approach is client-focused, ensuring that we not only
-                address the legal aspects of your case but also provide
-                compassionate support throughout the process. We believe in
-                transparent communication and personalized solutions that
-                prioritize your rights and well-being.
+                Domestic Violence is a serious crime that affects people from
+                all walks of life. It's a pattern of abusive behaviour used to
+                gain or maintain power and control over an intimate partner.
+                This harmful behaviour can include physical, emotional, sexual,
+                and economic abuse. If you or someone you know is experiencing
+                physical, emotional or psychological abuse, you are not alone.
+                The Domestic Violence Act, intended to protect victims, is
+                increasingly being misused as a tool for harassment and
+                coercion. False allegations can ruin lives, damage reputations,
+                and create financial hardship. It's imperative to ensure that
+                the law is used fairly and justly, protecting both victims and
+                the accused. My family lawyer is dedicated to protecting the
+                rights of victims and accused of domestic violence. We
+                understand the fear and confusion you may be feeling, don’t
+                suffer in silence we are here to help.
               </p>
             </div>
           </div>
         </div>
       </div>
-      {/* <!-- About End --> */}
+      {/* <!-- Domestic End --> */}
 
       {/* <!-- Footer  --> */}
       <WhatsApp />
@@ -87,4 +92,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Domestic;

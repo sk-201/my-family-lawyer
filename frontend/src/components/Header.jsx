@@ -5,6 +5,7 @@ const Header = () => {
   const toggleBurger = () => {
     setShowMenu((prev) => !prev);
   };
+  const [showServices, setShowServices] = useState(false);
   return (
     <div>
       <div className="container-fluid">
@@ -20,7 +21,7 @@ const Header = () => {
                 height={60}
                 style={{ marginLeft: "15px" }}
               />
-              <h1 className="m-0 display-5 " style={{ color: "#bf5324" }}>
+              <h1 className="m-0 display-5 " style={{ color: "#524f4f" }}>
                 My Family Lawyer
               </h1>
             </a>
@@ -31,7 +32,7 @@ const Header = () => {
                 <div className="h-100 d-inline-flex align-items-center py-2 px-3 text-center mx-2">
                   <i
                     className="fa fa-envelope  mr-2"
-                    style={{ color: "#bf5324" }}
+                    style={{ color: "#919191" }}
                   ></i>
                   <small style={{ color: "#000000", fontWeight: "600" }}>
                     myfamilylawyer01@gmail.com
@@ -40,7 +41,7 @@ const Header = () => {
                 <div className="h-100 d-inline-flex align-items-center py-2 px-2 mx-2">
                   <i
                     className="fa fa-phone-alt mr-2"
-                    style={{ color: "#bf5324" }}
+                    style={{ color: "#919191" }}
                   ></i>
                   <small style={{ color: "#000000", fontWeight: "600" }}>
                     +91-9868333896
@@ -50,7 +51,7 @@ const Header = () => {
             </div>
             <nav className="navbar navbar-expand-lg bg-white navbar-light p-0">
               <a href="/" className="navbar-brand d-block d-lg-none">
-                <h1 className="m-0 display-9 " style={{ color: "#bf5324" }}>
+                <h1 className="m-0 display-9 " style={{ color: "#524f4f" }}>
                   My Family Lawyer
                 </h1>
               </a>
@@ -80,19 +81,85 @@ const Header = () => {
                   </a>
                   {/* //active */}
                   <a href="/about" className="nav-item nav-link ">
-                    About
+                    About Us
                   </a>
 
                   <a href="/contact" className="nav-item nav-link">
                     Contact
                   </a>
                 </div>
-                <a
-                  href="/contact"
-                  className="btn btn-primary mr-3 d-none d-lg-block"
+                <div
+                  className="dropdown"
+                  style={{ position: "relative", color: "#000000" }}
                 >
-                  Get an Appointment
-                </a>
+                  <button
+                    className="btn dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    style={{ color: "#52524f" }}
+                    onClick={() => setShowServices(!showServices)}
+                  >
+                    Services
+                  </button>
+                  {showServices === true ? (
+                    <div
+                      className="bg-white  py-0"
+                      style={{
+                        width: "100%",
+                        marginTop: "10px",
+                        marginRight: "10px",
+                        justifyContent: "space-evenly",
+                        position: "absolute",
+                        zIndex: 1000,
+                      }}
+                    >
+                      <a
+                        href="/marriage"
+                        className="nav-item nav-link"
+                        style={{ color: "#000000" }}
+                      >
+                        Marriage
+                      </a>
+                      {/* //active */}
+                      <a
+                        href="/divorce"
+                        className="nav-item nav-link hover-underline"
+                        style={{ color: "#000000" }}
+                      >
+                        Divorce
+                      </a>
+
+                      <a
+                        href="/domestic-violence"
+                        className="nav-item nav-link"
+                        style={{ color: "#000000" }}
+                      >
+                        Domestic Violence
+                      </a>
+                      <a
+                        href="/child-custody"
+                        className="nav-item nav-link"
+                        style={{ color: "#000000" }}
+                      >
+                        Child Custody
+                      </a>
+                      <a
+                        href="/maintenance"
+                        className="nav-item nav-link"
+                        style={{ color: "#000000" }}
+                      >
+                        Maintenance
+                      </a>
+                      <a
+                        href="/live-in-relationship"
+                        className="nav-item nav-link"
+                        style={{ color: "#000000" }}
+                      >
+                        Live-in Relationship
+                      </a>
+                    </div>
+                  ) : null}
+                </div>
               </div>
               {showMenu == true ? (
                 <div
@@ -105,7 +172,7 @@ const Header = () => {
                   <a
                     href="/"
                     className="nav-item nav-link"
-                    style={{ color: "#bf5324" }}
+                    style={{ color: "#000000" }}
                   >
                     Home
                   </a>
@@ -113,7 +180,7 @@ const Header = () => {
                   <a
                     href="/about"
                     className="nav-item nav-link "
-                    style={{ color: "#bf5324" }}
+                    style={{ color: "#000000" }}
                   >
                     About
                   </a>
@@ -121,7 +188,7 @@ const Header = () => {
                   <a
                     href="/contact"
                     className="nav-item nav-link"
-                    style={{ color: "#bf5324" }}
+                    style={{ color: "#000000" }}
                   >
                     Contact
                   </a>
