@@ -89,12 +89,6 @@ const Footer = () => {
             <div className="d-flex justify-content-center mt-4">
               <a
                 className="btn btn-lg btn-outline-light btn-lg-square mr-2"
-                href="#"
-              >
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a
-                className="btn btn-lg btn-outline-light btn-lg-square mr-2"
                 href="https://www.facebook.com/profile.php?id=100093380696586"
                 target="_blank"
               >
@@ -102,13 +96,15 @@ const Footer = () => {
               </a>
               <a
                 className="btn btn-lg btn-outline-light btn-lg-square mr-2"
-                href="#"
+                href="https://www.linkedin.com/company/my-family-lawyer01/"
+                target="_blank"
               >
                 <i className="fab fa-linkedin-in"></i>
               </a>
               <a
                 className="btn btn-lg btn-outline-light btn-lg-square"
-                href="#"
+                href="https://www.instagram.com/mohd.yusuf.946?igsh=djBmazlnZ3o1cmd5"
+                target="_blank"
               >
                 <i className="fab fa-instagram"></i>
               </a>
