@@ -19,6 +19,7 @@ const Header = () => {
                 src="img/logo.jpg"
                 width={70}
                 height={60}
+                alt="logo"
                 style={{ marginLeft: "15px" }}
               />
               <h1 className="m-0 display-5 " style={{ color: "#524f4f" }}>
@@ -161,7 +162,7 @@ const Header = () => {
                   ) : null}
                 </div>
               </div>
-              {showMenu == true ? (
+              {showMenu === true ? (
                 <div
                   className="bg-white  py-0"
                   style={{
@@ -192,6 +193,71 @@ const Header = () => {
                   >
                     Contact
                   </a>
+
+                  <a
+                    className="nav-item nav-link dropdown-toggle"
+                    style={{ color: "#000000" }}
+                    onClick={() => setShowServices(!showServices)}
+                  >
+                    Services
+                  </a>
+                  {showServices === true ? (
+                    <div
+                      className="bg-white  py-0"
+                      style={{
+                        width: "100%",
+                        marginTop: "10px",
+                        justifyContent: "space-evenly",
+                        position: "absolute",
+                        zIndex: 1000,
+                      }}
+                    >
+                      <a
+                        href="/marriage"
+                        className="nav-item nav-link"
+                        style={{ color: "#000000" }}
+                      >
+                        Marriage
+                      </a>
+                      {/* //active */}
+                      <a
+                        href="/divorce"
+                        className="nav-item nav-link hover-underline"
+                        style={{ color: "#000000" }}
+                      >
+                        Divorce
+                      </a>
+
+                      <a
+                        href="/domestic-violence"
+                        className="nav-item nav-link"
+                        style={{ color: "#000000" }}
+                      >
+                        Domestic Violence
+                      </a>
+                      <a
+                        href="/child-custody"
+                        className="nav-item nav-link"
+                        style={{ color: "#000000" }}
+                      >
+                        Child Custody
+                      </a>
+                      <a
+                        href="/maintenance"
+                        className="nav-item nav-link"
+                        style={{ color: "#000000" }}
+                      >
+                        Maintenance
+                      </a>
+                      <a
+                        href="/live-in-relationship"
+                        className="nav-item nav-link"
+                        style={{ color: "#000000" }}
+                      >
+                        Live-in Relationship
+                      </a>
+                    </div>
+                  ) : null}
                 </div>
               ) : null}
             </nav>

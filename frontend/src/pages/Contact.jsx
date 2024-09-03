@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import WhatsApp from "../components/WhatsApp";
-
+import { ToastContainer, toast, Bounce } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
   const [name, setName] = useState("");
   const [phoneNo, setPhoneno] = useState("");
@@ -30,6 +31,20 @@ const Contact = () => {
           },
         }
       );
+      if (res.status == 200) {
+        toast.success(" Email Sent Successfully", {
+          position: "top-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          transition: Bounce,
+        });
+      }
+
       setName("");
       setMessage("");
       setSubject("");
@@ -169,6 +184,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
       <WhatsApp />
       {/* <!-- Contact End --> */}
       {/* <!-- Footer */}
